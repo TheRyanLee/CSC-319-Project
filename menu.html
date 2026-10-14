@@ -9,20 +9,36 @@
 </head>
 <body>
     <header>
-        <h1>Menu</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-        </ul>
-    </nav>
-
     <main class="container">
+        <h1>Menu</h1>
 
+        <h2 class="favorites-title">Guest Favorites</h2>
+        <div class = "favorites">
+            <section class = "card favorite-menu-item">
+                <img src="images/PrimeRibBuffet.png" alt="Prime Rib" class="responsive-img">
+                <h3>Prime Rib</h3>
+            </section>
+
+            <section class = "card favorite-menu-item">
+                <img src="images/steak.png" alt="Steak" class="responsive-img">
+                <h3>Steak</h3>
+            </section>
+
+            <section class = "card favorite-menu-item">
+                <img src="images/lobster.png" alt="Lobster" class="responsive-img">
+                <h3>Lobster</h3>
+            </section>
+        </div>
     </main>
 </body>
 </html>
