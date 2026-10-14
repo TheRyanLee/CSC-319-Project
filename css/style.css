@@ -63,14 +63,27 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.favorites-title {
+.menu-header, 
+.menu-item {
     text-align: center;
+}
+
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 @media (min-width: 700px) {
     .menu {
         flex-direction: row;
         gap: 18px;
+    }
+
+    .foodMenu {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
     }
 
     .content-grid {
