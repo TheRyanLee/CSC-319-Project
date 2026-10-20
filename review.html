@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Review Us!</h1>
-        <p class="tagline"></p>
+        <p class="tagline">Come hungry. Leave legendary.</p>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -23,8 +23,8 @@
     </header>
 
     <main class="container">
+        <h2 class="instruction-header">Form Details and Instructions</h2>
         <section class="card" id="form-instructions">
-            <h2>Form Details and Instructions</h2>
             <p>Filling this review out helps us rotate our menu based on the highest rated foods. Reviewing earns you points on the leaderboard.</p>
         </section>
 
@@ -49,48 +49,71 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <p id="phone-help" class="help-text">
-                        Enter 10 digits. Use numbers only (example 0-9).
-                    </p>
                     <input id="phone"
                         name="phone"
                         minlength="10"
                         maxlenght="10"
                         pattern="[0-9]{10}"
-                        aria-describedby="phone-help"
+                        placeholder="Enter 10 digits.(example 0-9)"
                         required>
                 </div>
             </div>
+            <div class="form-row">
 
-            <div class="form-group">
-                <label for="breakfast">Favorite Breakfast Item</label>
-                <select id="breakfast" name="breakfast" required>
-                    <option value="">Choose your favorite breakfast item</option>
-                    <option value="walk">Walking</option>
-                    <option value="bike">Biking</option>
-                    <option value="car">Car</option>
-                    <option value="plane">Plane</option>
-                </select>
+                <div class="form-group">
+                    <label for="breakfast">Favorite Breakfast Item</label>
+                    <select id="breakfast" name="breakfast" required>
+                        <option value="">Choose your favorite breakfast item</option>
+                        <option value="walk">Walking</option>
+                        <option value="bike">Biking</option>
+                        <option value="car">Car</option>
+                        <option value="plane">Plane</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lunch">Favorite Lunch Item</label>
+                    <select id="lunch" name="lunch" required>
+                        <option value="">Choose your favorite lunch item</option>
+                        <option value="walk">Walking</option>
+                        <option value="bike">Biking</option>
+                        <option value="car">Car</option>
+                        <option value="plane">Plane</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dinner">Favorite Dinner Item</label>
+                    <select id="dinner" name="dinner" required>
+                        <option value="">Choose your favorite dinner item</option>
+                        <option value="walk">Walking</option>
+                        <option value="bike">Biking</option>
+                        <option value="car">Car</option>
+                        <option value="plane">Plane</option>
+                    </select>
+                </div>
+                
             </div>
-            <div class="form-group">
-                <label for="lunch">Favorite Lunch Item</label>
-                <select id="lunch" name="lunch" required>
-                    <option value="">Choose your favorite lunch item</option>
-                    <option value="walk">Walking</option>
-                    <option value="bike">Biking</option>
-                    <option value="car">Car</option>
-                    <option value="plane">Plane</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="dinner">Favorite Dinner Item</label>
-                <select id="dinner" name="dinner" required>
-                    <option value="">Choose your favorite dinner item</option>
-                    <option value="walk">Walking</option>
-                    <option value="bike">Biking</option>
-                    <option value="car">Car</option>
-                    <option value="plane">Plane</option>
-                </select>
+            <fieldset>
+                <legend>How often do you currently eat here?</legend>
+                <label>
+                    <input type="radio" name="frequent" value="daily" required>
+                    Daily
+                </label>
+                <label>
+                    <input type="radio" name="frequent" value="weekly">
+                    Weekly
+                </label>
+                <label>
+                    <input type="radio" name="frequent" value="monthly">
+                    Monthly
+                </label>
+                <label>
+                    <input type="radio" name="frequent" value="allMeals">
+                    Literally Every Meal
+                </label>                       
+            </fieldset>
+            <div class="button-row">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear form</button>
             </div>
 
 
