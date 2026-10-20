@@ -9,19 +9,95 @@
 </head>
 <body>
     <header>
+        <h1>Review Us!</h1>
+        <p class="tagline"></p>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="employee.html">Employee Page</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main class="container">
-        <h1>Reviews</h1>
+        <section class="card" id="form-instructions">
+            <h2>Form Details and Instructions</h2>
+            <p>Filling this review out helps us rotate our menu based on the highest rated foods. Reviewing earns you points on the leaderboard.</p>
+        </section>
+
+        <form id="review-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="full-name">Full name</label>
+                    <input id="full-name"
+                        name="fullName"
+                        type="text"
+                        minlength="2"
+                        maxlength="50"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input id="email"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <p id="phone-help" class="help-text">
+                        Enter 10 digits. Use numbers only (example 0-9).
+                    </p>
+                    <input id="phone"
+                        name="phone"
+                        minlength="10"
+                        maxlenght="10"
+                        pattern="[0-9]{10}"
+                        aria-describedby="phone-help"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="breakfast">Favorite Breakfast Item</label>
+                <select id="breakfast" name="breakfast" required>
+                    <option value="">Choose your favorite breakfast item</option>
+                    <option value="walk">Walking</option>
+                    <option value="bike">Biking</option>
+                    <option value="car">Car</option>
+                    <option value="plane">Plane</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lunch">Favorite Lunch Item</label>
+                <select id="lunch" name="lunch" required>
+                    <option value="">Choose your favorite lunch item</option>
+                    <option value="walk">Walking</option>
+                    <option value="bike">Biking</option>
+                    <option value="car">Car</option>
+                    <option value="plane">Plane</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dinner">Favorite Dinner Item</label>
+                <select id="dinner" name="dinner" required>
+                    <option value="">Choose your favorite dinner item</option>
+                    <option value="walk">Walking</option>
+                    <option value="bike">Biking</option>
+                    <option value="car">Car</option>
+                    <option value="plane">Plane</option>
+                </select>
+            </div>
+
+
+
+        </form>
+
+
     </main>
 
 </body>
