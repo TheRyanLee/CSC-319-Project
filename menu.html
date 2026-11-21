@@ -69,8 +69,13 @@
                 </div>
                 <div class="button-row">
                     <button type="submit">Submit</button>
+                    <button type="button" id="clearAllBtn">Clear All Requests</button>
                 </div>
             </form>
+
+            <p id="requestFeedback" class="mt-2" role="status" aria-live="polite"></p>
+            <h3 class="mt-3">Submitted Requests (<span id="requestCount">0</span>)</h3>
+            <ul id="requestList"></ul>
         </section>
     </main>
 </body>
